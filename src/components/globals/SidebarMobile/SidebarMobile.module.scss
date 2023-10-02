@@ -1,0 +1,17 @@
+.sidebarMobile {
+    background: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+    &__wrapper {
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__item {
+        &_active {
+            color: green;
+        }
+    }
+}

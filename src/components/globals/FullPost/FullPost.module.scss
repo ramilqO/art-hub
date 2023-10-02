@@ -1,0 +1,36 @@
+@import '../../../styles/variables.scss';
+
+.fullpost {
+    width: 100%;
+    background: white;
+
+    &__wrapper {
+        padding: 10px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &__author {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__author span {
+        margin-left: 5%;
+    }
+
+    &__title {
+        font-size: 22px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .fullpost {
+        &__wrapper {
+            padding: 10px;
+        }
+    }
+}

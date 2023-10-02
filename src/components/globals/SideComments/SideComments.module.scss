@@ -1,0 +1,19 @@
+.sideComments {
+    height: calc(100vh - 70px);
+    width: 350px;
+    position: sticky;
+    top: 70px;
+
+    &__wrapper {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        overflow-y: scroll;
+        height: 100%;
+    }
+
+    &__wrapper::-webkit-scrollbar {
+        display: none;
+    }
+}
