@@ -1,36 +1,11 @@
-// 'use client'
+import { NextPage } from "next";
 
-// import Fullpost from '@/components/globals/FullPost/FullPost'
-// import PageLayout from '@/components/globals/PageLayout/PageLayout'
-// import { GetServerSideProps } from 'next'
-// import { usePathname } from 'next/navigation'
+const Page: NextPage = () => {
+  return (
+    <div>
+      <h1>Next page</h1>
+    </div>
+  );
+};
 
-// // interface IFullPost {
-// //     author: {
-// //         avatar: string;
-// //         name: string;
-// //     }
-// //     createdAt: string;
-// //     title: string;
-// //     text: string
-// // }
-
-// const FavoriteArticle = ({ fullpost }: any) => {
-//     const pathName = usePathname().split('/').pop()
-//     console.log(fullpost)
-
-//     return (
-//         <PageLayout showSidebar showSideComments>
-//             <Fullpost />
-//         </PageLayout>
-//     )
-// }
-
-// export default FavoriteArticle
-
-// export const getServerSideProps = async (id: any) => {
-//     const res = await fetch(`api/favorites/${id}`)
-//     const fullpost = await res.json()
-
-//     return { props: { fullpost } }
-// }
+export default Page;
