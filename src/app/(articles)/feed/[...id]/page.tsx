@@ -10,9 +10,7 @@ const Page: NextPage = () => {
   const pathname = usePathname();
 
   const fetchPost = async () => {
-    const post = await fetch(
-      `http://localhost:3000/api/feed/${pathname.slice(6)}`
-    )
+    const post = await fetch(`/api/feed/${pathname.slice(6)}`)
       .then((res) => res.json())
       .then((post) => setPost(post))
       .catch((e) => console.log(e));

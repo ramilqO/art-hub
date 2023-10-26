@@ -11,9 +11,7 @@ const New: NextPage = () => {
   const pathname = usePathname();
 
   const fetchPost = async () => {
-    const post = await fetch(
-      `http://localhost:3000/api/popular/${pathname.slice(4)}`
-    )
+    const post = await fetch(`/api/popular/${pathname.slice(4)}`)
       .then((res) => res.json())
       .then((post) => setPost(post))
       .catch((e) => console.log(e));

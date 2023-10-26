@@ -3,9 +3,7 @@ import Post from "@/components/globals/Post/Post";
 import { NextPage } from "next";
 
 const fetchData = () =>
-  fetch("http://localhost:3000/api/popular").then((response) =>
-    response.json()
-  );
+  fetch("/api/popular").then((response) => response.json());
 
 const Popular: NextPage = async () => {
   const posts = await fetchData();
